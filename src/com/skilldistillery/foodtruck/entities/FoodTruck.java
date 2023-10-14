@@ -1,7 +1,7 @@
 /*
-Synopsis:
-Author:
-Version: 
+Synopsis: FoodTruck class
+Author: Jacob Stuart
+Version: 1.0
  */
 package com.skilldistillery.foodtruck.entities;
 
@@ -9,14 +9,15 @@ public class FoodTruck {
 	private int foodTruckID;
 	private String foodTruckName;
 	private String foodTruckFood;
-	private double foodTruckRating;
+	private int foodTruckRating;
 	private static int nextFoodTruckId = 0;
-	
-	public FoodTruck () {
-	
+
+	public FoodTruck() {
+		FoodTruck.nextFoodTruckId++;
+		this.foodTruckID = FoodTruck.nextFoodTruckId;
 	}
 
-	public FoodTruck(String foodTruckName, String foodTruckFood, double foodTruckRating) {
+	public FoodTruck(String foodTruckName, String foodTruckFood, int foodTruckRating) {
 		this.foodTruckName = foodTruckName;
 		this.foodTruckFood = foodTruckFood;
 		this.foodTruckRating = foodTruckRating;
@@ -48,7 +49,7 @@ public class FoodTruck {
 		return foodTruckRating;
 	}
 
-	public void setFoodTruckRating(double foodTruckRating) {
+	public void setFoodTruckRating(int foodTruckRating) {
 		this.foodTruckRating = foodTruckRating;
 	}
 
@@ -58,10 +59,10 @@ public class FoodTruck {
 
 	@Override
 	public String toString() {
-		return "| Food Truck ID: " + foodTruckID + "\t" + (foodTruckName != null ? "Food Truck Name: " + foodTruckName + "\t" : "")
+		return "| Food Truck ID: " + foodTruckID + "\t"
+				+ (foodTruckName != null ? "Food Truck Name: " + foodTruckName + "\t" : "")
 				+ (foodTruckFood != null ? "Type of food: " + foodTruckFood + "\t" : "") + "Food Truck Rating: "
 				+ foodTruckRating + " | ";
 	}
 
-		
 }
