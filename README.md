@@ -39,13 +39,42 @@ I plan to implement as many of these systems as make sense to get a better grasp
 and best practices.
 
 # Current Progress
-Created class files and test file.
+Created class files.
+Created stub methods.
+Finished FoodTruck class.
+	- foodTruckID: int
+	- foodTruckName: String
+	- foodTruckFood: String
+	- foodTruckRating: double
+	- static nextFoodTruckID: int 
+
+	+ FoodTruck(String, String, double)
+	+ getNextFoodTruckID(): int
+	+ getFoodTruckName(): String
+	+ setFoodTruckName(String): void 
+	+ getFoodTruckFood(): String
+	+ setFoodTruckFood(String): void 
+	+ getFoodTruckRating(): double
+	+ setFoodTruckRating(double): void 
+	+ toString(): String
+	+ getFoodTruckID(): int
+
+Started coding method stubs
+Have set coding to pull between 0 and 5 Foodtrucks worth of input from the user
+Take the food trucks created and assign to an array
+pass array to a method that returns a new array sized and filled with non null values.
+
 
 # Next Steps
-Create UML and adjust as needed
-Create stub methods
-Create tests
-
+Create menu display method
+Create menu switch method
+Loop menu
+Create methods to call with menu options
+fix greeting
+set result if no food trucks added
+set result if user tries to add a 6th truck.
+add farewell message
 
 # Lessons learned or reinforced on this project
-
+You can't adjust an array once made. You have to create a new array and transfer information over. 
+You can't underline in markdown.
