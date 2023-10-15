@@ -10,8 +10,10 @@ public class FoodTruck {
 	private String foodTruckName;
 	private String foodTruckFood;
 	private int foodTruckRating;
+	//Variable used to set FoodTruckId via constructor method
 	private static int nextFoodTruckId = 0;
-
+	
+	//Note: Even if a no args constructor is used, the FoodTruck object will still have an ID
 	public FoodTruck() {
 		FoodTruck.nextFoodTruckId++;
 		this.foodTruckID = FoodTruck.nextFoodTruckId;
@@ -24,7 +26,8 @@ public class FoodTruck {
 		FoodTruck.nextFoodTruckId++;
 		this.foodTruckID = FoodTruck.nextFoodTruckId;
 	}
-
+	
+	//Setter/Getters: most are not used currently but that may change in the future
 	public int getNextFoodTruckId() {
 		return nextFoodTruckId;
 	}
@@ -44,11 +47,12 @@ public class FoodTruck {
 	public void setFoodTruckFood(String foodTruckFood) {
 		this.foodTruckFood = foodTruckFood;
 	}
-
+	
+	//Mutator converts Rating int into a double to make Avg calculation cleaner
 	public double getFoodTruckRating() {
 		return foodTruckRating;
 	}
-
+	
 	public void setFoodTruckRating(int foodTruckRating) {
 		this.foodTruckRating = foodTruckRating;
 	}
