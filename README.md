@@ -39,7 +39,7 @@ Of note, in the first version of the program the user is prompted to enter the t
 # Technologies Used
 Overall I am learning and using Eclipse IDE to program in Java 1.8. Prior to this assignment we covered: Variables and Constants, Methods, Screen Output and Keyboard Input, Expressions, If/Else, Switch, While loops, For Loops, Cast Numerals, Packages, Stringbuilder, Objects, Classes, Superclasses, JUnit testing, TDD or Testing Driven Developement, UML class diagrams, Encapsulation, Inheritance in Java, Visibility, ASCII and Unicode Data.
 
-This app uses the following"
+This app uses the following subjects.
 Java 1.8, Eclipse, Variables and constants, Methods, Screen Output and Keyboard Input, Expressions, If/else, Switch, While Loop, For loop, For each loop, Packages, Objects, Classes, UML formatted diagram of class, Ecapsulation, Visibility.
 
 I plan to implement as many of these systems as make sense to get a better grasp of their uses 
@@ -49,23 +49,24 @@ and best practices.
 Created class files.
 Created stub methods.
 Finished FoodTruck class.
-	- foodTruckID: int
-	- foodTruckName: String
-	- foodTruckFood: String
-	- foodTruckRating: double
-	- static nextFoodTruckID: int 
+```
+- foodTruckID: int
+- foodTruckName: String
+- foodTruckFood: String
+- foodTruckRating: double
+- static nextFoodTruckID: int 
 
-	+ FoodTruck(String, String, double)
-	+ getNextFoodTruckID(): int
-	+ getFoodTruckName(): String
-	+ setFoodTruckName(String): void 
-	+ getFoodTruckFood(): String
-	+ setFoodTruckFood(String): void 
-	+ getFoodTruckRating(): double
-	+ setFoodTruckRating(double): void 
-	+ toString(): String
-	+ getFoodTruckID(): int
-
++ FoodTruck(String, String, double)
++ getNextFoodTruckID(): int
++ getFoodTruckName(): String
++ setFoodTruckName(String): void 
++ getFoodTruckFood(): String
++ setFoodTruckFood(String): void 
++ getFoodTruckRating(): double
++ setFoodTruckRating(double): void 
++ toString(): String
++ getFoodTruckID(): int
+```
 Created method to get array of food trucks
 Created method to trim array of food trucks to only non-null objects
 Creted menu to display various types of data
